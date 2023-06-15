@@ -1,17 +1,18 @@
 import Users from "../components/Users";
 
 async function fetchUsers() {
-  const res = await fetch("https://reqres.in/api/users");
+  const res = await fetch("http://localhost:8000/jugadores/");
   const data = await res.json();
-  return data.data;
+  console.log(data);
+  return data;
 }
 
 async function IndexPage() {
-  const users = await fetchUsers();
+  const jugadores = await fetchUsers();
 
   return (
     <div>
-      <Users users={users} />
+      <Users jugadores={jugadores} />
     </div>
   );
 }

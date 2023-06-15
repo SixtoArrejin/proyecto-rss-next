@@ -1,11 +1,13 @@
 async function getUser(id) {
-  const res = await fetch(`https://reqres.in/api/users/${id}`);
+  const res = await fetch(`http://localhost:8000/jugadores/${id}`);
   const data = await res.json();
-  return data.data;
+  console.log(data)
+
+  return data;
 }
 
 async function UserPage({ params }) {
-  const user = await getUser(params.id);
+  const jugador = await getUser(params.id);
 
   return (
     <div className="row">
@@ -13,17 +15,16 @@ async function UserPage({ params }) {
         <div className="card">
           <div className="card-header text-center">
             <img
-              src={user.avatar}
-              alt={user.first_name + " " + user.last_name}
+              src={jugador.imagen}
               style={{ borderRadius: "50%" }}
             />
           </div>
           <div className="card-body text-center">
             User
             <h3>
-              {user.id}. {user.first_name} {user.last_name}
+              {jugador.id}. {jugador.nombre_apellido} {jugador.numero_camiseta}
             </h3>
-            <p>Email: {user.email}</p>
+            <p>Altura: {jugador.altura} Posicion: {jugador.posicion}</p>
           </div>
         </div>
       </div>

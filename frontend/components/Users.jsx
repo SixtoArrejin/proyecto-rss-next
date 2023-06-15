@@ -1,25 +1,25 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-function Users({ users }) {
+function Users({ jugadores }) {
   const router = useRouter();
 
   return (
     <div>
       <ul className="list-group">
-        {users.map((user) => (
+        {jugadores.map((jugador) => (
           <li
             className="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
-            key={user.id}
-            onClick={() => router.push(`/users/${user.id}`)}
+            key={jugador.id}
+            onClick={() => router.push(`/users/${jugador.id}`)}
           >
             <div>
               <h5>
-                {user.id}. {user.first_name} {user.last_name}
+                {jugador.id}. {jugador.nombre_apellido} {jugador.numero_camiseta}
               </h5>
-              <p>Email: {user.email}</p>
+              <p>Altura: {jugador.altura} Posicion: {jugador.posicion}</p>
             </div>
-            <img src={user.avatar} style={{ borderRadius: "50%" }} />
+            <img src={jugador.imagen} style={{ borderRadius: "50%" }} />
           </li>
         ))}
       </ul>
