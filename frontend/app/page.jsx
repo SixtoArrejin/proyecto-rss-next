@@ -3,7 +3,7 @@ import Users from "../components/Users";
 async function fetchUsers() {
   const res = await fetch("http://localhost:8000/jugadores/");
   const data = await res.json();
-  console.log(data);
+  console.log(data)
   return data;
 }
 
