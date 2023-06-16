@@ -9,13 +9,13 @@ export const Navigation = () => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="/about" className="nav-link">
+            <Link href="/equipo" className="nav-link">
               Equipo
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/services" className="nav-link">
-              Director tecnico
+            <Link href="/director-tecnico" className="nav-link">
+              Director técnico
             </Link>
           </li>
         </ul>

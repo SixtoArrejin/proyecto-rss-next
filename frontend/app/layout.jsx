@@ -1,7 +1,7 @@
 import { Navigation } from "../components/Navigation";
 
 export const metadata = {
-  title: "Nextjs First App",
+  title: "SSR",
   description: "My first Nextjs app",
   keywords: "nextjs, react, javascript",
 };

@@ -9,7 +9,7 @@ async function fetchUsers() {
   return data;
 }
 
-async function IndexPage() {
+async function Index() {
   const jugadores = await fetchUsers();
 
   return (
@@ -19,4 +19,4 @@ async function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default Index;
