@@ -9,6 +9,9 @@ const Jugadores = db.define("jugadores", {
   altura: { type: DataTypes.FLOAT },
   numero_camiseta: { type: DataTypes.INTEGER },
   posicion: { type: DataTypes.STRING },
+  edad: { type: DataTypes.INTEGER },
+  goles: { type: DataTypes.INTEGER },
+  descripcion: { type: DataTypes.STRING },
   imagen: { type: DataTypes.STRING },
 });
 
