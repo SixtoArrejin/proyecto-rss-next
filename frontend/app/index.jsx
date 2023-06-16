@@ -1,4 +1,4 @@
-import Users from "../components/Users";
+import TarjetaJugador from "../components/Jugadores";
 
 async function fetchUsers() {
   const res = await fetch("http://localhost:8000/jugadores", {
@@ -9,14 +9,14 @@ async function fetchUsers() {
   return data;
 }
 
-async function IndexPage() {
+async function Home() {
   const jugadores = await fetchUsers();
 
   return (
     <div>
-      <Users jugadores={jugadores} />
+      <TarjetaJugador jugadores={jugadores} />
     </div>
   );
 }
 
-export default IndexPage;
+export default Home;

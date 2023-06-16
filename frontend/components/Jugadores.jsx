@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import "./User.css";
 
-function Users({ jugadores }) {
+function TarjetaJugador({ jugadores }) {
   const router = useRouter();
 
   return (
@@ -39,4 +39,4 @@ function Users({ jugadores }) {
   );
 }
 
-export default Users;
+export default TarjetaJugador;

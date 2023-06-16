@@ -1,6 +1,7 @@
 import Campeones from "../../Imagenes/Campeones.png";
 import Image from "next/image";
-const About = () => (
+
+const Equipo = () => (
   <>
     <h1>Equipo</h1>
     <p>
@@ -21,4 +22,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default Equipo;

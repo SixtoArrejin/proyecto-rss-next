@@ -1,6 +1,7 @@
 import Director from "../../Imagenes/Director.png";
 import Image from "next/image";
-const Services = () => (
+
+const Tecnico = () => (
   <div>
     <h1>Director tecnico</h1>
     <p>
@@ -24,4 +25,4 @@ const Services = () => (
   </div>
 );
 
-export default Services;
+export default Tecnico;
