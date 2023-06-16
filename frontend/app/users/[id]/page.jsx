@@ -25,8 +25,13 @@ async function UserPage({ params }) {
             </h3>
             <p>Email: {user.email}</p>
           </div>
+          <div className="card-body">
+            <h4>Descripción: </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius at non dolor, minus exercitationem placeat quidem accusantium eos, iure laboriosam culpa animi. Impedit laboriosam tempore maxime praesentium eaque quasi quaerat quia culpa illo perspiciatis earum error ex harum quisquam veniam, accusantium officiis sed magni.</p>
+          </div>
         </div>
       </div>
+      
     </div>
   );
 }
