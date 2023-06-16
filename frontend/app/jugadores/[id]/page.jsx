@@ -1,4 +1,4 @@
-async function getUser(id) {
+async function getJugador(id) {
   const res = await fetch(`http://localhost:8000/jugadores/${id}`, {
     cache: "no-store",
   });
@@ -6,8 +6,8 @@ async function getUser(id) {
   return data;
 }
 
-async function UserPage({ params }) {
-  const jugador = await getUser(params.id);
+async function JugadorPage({ params }) {
+  const jugador = await getJugador(params.id);
 
   return (
     <div className="row">
@@ -37,4 +37,4 @@ async function UserPage({ params }) {
   );
 }
 
-export default UserPage;
+export default JugadorPage;

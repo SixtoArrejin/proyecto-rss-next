@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
-import "./User.css";
+import "./tarjetasStyles.css";
 
-function Users({ jugadores }) {
+function Jugadores({ jugadores }) {
   const router = useRouter();
 
   return (
@@ -13,7 +13,7 @@ function Users({ jugadores }) {
             className="card"
             style={{ width: "18rem", cursor: "pointer" }}
             key={index}
-            onClick={() => router.push(`/users/${jugador.id}`)}
+            onClick={() => router.push(`/jugadores/${jugador.id}`)}
           >
             <img
               src={jugador.imagen}
@@ -39,4 +39,4 @@ function Users({ jugadores }) {
   );
 }
 
-export default Users;
+export default Jugadores;

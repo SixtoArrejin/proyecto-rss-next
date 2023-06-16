@@ -18,10 +18,6 @@ try {
   console.log(`El error de la conexion es: ${error}`);
 }
 
-/* app.get('/', (req, res)=> {
-    res.send('Hola Mundo')
-}) */
-
 app.listen(8000, () => {
-  console.log("Server corriendo en http://localhost:8000/");
+  console.log("Server escuchando en http://localhost:8000/");
 });

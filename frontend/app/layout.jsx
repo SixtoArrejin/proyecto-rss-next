@@ -1,8 +1,8 @@
-import { Navigation } from "../components/Navigation";
+import { Navegacion } from "../components/Navegacion";
 
 export const metadata = {
   title: "SSR",
-  description: "My first Nextjs app",
+  description: "La seleccion Argentina",
   keywords: "nextjs, react, javascript",
 };
 
@@ -16,7 +16,7 @@ function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navigation />
+        <Navegacion />
         <div className="container p-4">{children}</div>
       </body>
     </html>

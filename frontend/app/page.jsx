@@ -1,6 +1,6 @@
-import Users from "../components/Users";
+import TarjetaJugador from "../components/TarjetaJugador.jsx";
 
-async function fetchUsers() {
+async function fetchJugadores() {
   const res = await fetch("http://localhost:8000/jugadores", {
     cache: 'no-store'
   });
@@ -10,11 +10,11 @@ async function fetchUsers() {
 }
 
 async function Index() {
-  const jugadores = await fetchUsers();
+  const jugadores = await fetchJugadores();
 
   return (
     <div>
-      <Users jugadores={jugadores} />
+      <TarjetaJugador jugadores={jugadores} />
     </div>
   );
 }

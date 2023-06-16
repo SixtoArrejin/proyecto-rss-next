@@ -1,13 +1,16 @@
 import Link from "next/link";
 
-export const Navigation = () => (
+export const Navegacion = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
     <div className="container">
-      <Link href="/" className="navbar-brand">
-        Jugadores
-      </Link>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
+          <li>
+            {" "}
+            <Link href="/" className="nav-link">
+              Jugadores
+            </Link>
+          </li>
           <li className="nav-item">
             <Link href="/equipo" className="nav-link">
               Equipo
