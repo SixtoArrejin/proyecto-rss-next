@@ -1,22 +1,30 @@
-# proyecto-ssr-next
+# Proyecto-ssr-tp2
 
 Desarrollo de la Actividad n°2 de la materia Desarrollo de Software
 
 Para iniciar el proyecto, inicialmente hay que clonar el repositorio. Luego se debe acceder a la carpeta del proyecto; y una vez allí acceder a la carpeta frontend.
 
+```
 npm install
+```
 
 Y luego:
 
+```
 npm run dev
+```
 
 Con estos comandos, deberia encontarse funcionando el frontend. Para el backend, se debe acceder al directorio backend y los siguientes comandos.
-
+```
 npm install
+```
 
 Y luego:
-
+```
 node app.js
+```
+
+Por ultimo se tendria que crear la base de datos local con la siguinete sentencia sql. Y se debe configurar el nombre de la base de datos, el usuario y la contraseña. Esto se encuentra en el archivo db. 
 
 ```
 CREATE DATABASE seleccion
